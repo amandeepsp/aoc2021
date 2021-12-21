@@ -22,9 +22,9 @@
   (if (>= num-one num-zero)
     \1 \0))
 
-(defn epsilon ([num-one num-zero]
-               (if (< num-one num-zero)
-                 \1 \0)))
+(defn epsilon [num-one num-zero]
+  (if (< num-one num-zero)
+    \1 \0))
 
 (defn calc-rate [kind]
   (-> (map kind num-ones num-zeros)
