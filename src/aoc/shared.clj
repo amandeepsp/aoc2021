@@ -23,3 +23,6 @@
 
 (defn transpose [x]
   (apply mapv vector x))
+
+(defn abs [x]
+  (if (< x 0) (- x) x))
