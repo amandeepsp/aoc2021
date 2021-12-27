@@ -1,5 +1,5 @@
 (ns aoc.day11
-  (:require [aoc.shared :refer [read-lines all-true?]]))
+  (:require [aoc.shared :refer [read-lines]]))
 
 (def input
   (->> (read-lines "day11.txt")
@@ -80,9 +80,8 @@
 
 ;Part 2
 (->> (iterate step input)
-     (take-while #(not (all-true? (map zero? (flatten %)))))
+     (take-while #(not (every? zero? (flatten %))))
      (count))
-
 
 
 

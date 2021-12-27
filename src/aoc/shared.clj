@@ -11,16 +11,6 @@
        (slurp)
        (str/split-lines)))
 
-(defn any-true? [coll]
-  (reduce (fn [acc elem]
-            (or acc elem))
-          false coll))
-
-(defn all-true? [coll]
-  (reduce (fn [acc elem]
-            (and acc elem))
-          true coll))
-
 (defn transpose [x]
   (apply mapv vector x))
 
