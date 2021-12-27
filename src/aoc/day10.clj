@@ -1,6 +1,5 @@
 (ns aoc.day10
-  (:require [aoc.shared :refer [read-lines]]
-            [clojure.string :as str]))
+  (:require [aoc.shared :refer [read-lines]]))
 
 (def input
   (->> (read-lines "day10.txt")
